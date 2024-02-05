@@ -8,6 +8,12 @@
 body {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header, .main{
@@ -16,9 +22,14 @@ header, .main{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 750px;
+  width: 100%;
   color: white;
 }
+
+.main {
+  max-height: 700px;
+}
+
 .inner-div {
   display: flex;
   width: 75%;
@@ -106,30 +117,27 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6% 0;
-  margin-bottom: 8%;
+  padding: 4% 0;
+  border: 1px solid black;
 }
 
 .inner-service-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 15%;
-  column-gap: 15%;
-  height: 100%;
-  /* height: auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .service{
   display: flex;
   align-items: center;
   column-gap: 5%;
-  /* height: 100%; */
+  flex-basis: 40%;
+  margin: 4% 0;
 }
 
 .logo-div {
   width: 20%;
   width: fit-content;
-  overflow:visible;
 }
 
 .logo{
@@ -159,8 +167,7 @@ footer{
   color: white;
   display: flex;
   justify-content: center;
-  /* align-items:end; */
-  padding: 7% 0;
+  padding: 7% 0%;
 }
 .inner-footer-div {
   display: flex;
@@ -193,4 +200,37 @@ footer{
 .copyright {
   text-align: center;
   font-size: 1rem;
+}
+
+/* @media (max-width: 1024px) {
+  div .main-text {
+    font-size: 3.5rem;
+  }
+} */
+
+/* @media (max-width: 1024px) {
+  div .main-text {
+    font-size: 3.5rem;
+  }
+} */
+
+@media (max-width: 1030px) {
+  div .main-text {
+    font-size: 3.5rem;
+  }
+  .inner-service-div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 978px) {
+  div .main-text {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    max-height: 500px;
+  }
 }
