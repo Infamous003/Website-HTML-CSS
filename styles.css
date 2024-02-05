@@ -202,18 +202,6 @@ footer{
   font-size: 1rem;
 }
 
-/* @media (max-width: 1024px) {
-  div .main-text {
-    font-size: 3.5rem;
-  }
-} */
-
-/* @media (max-width: 1024px) {
-  div .main-text {
-    font-size: 3.5rem;
-  }
-} */
-
 @media (max-width: 1030px) {
   div .main-text {
     font-size: 3.5rem;
@@ -223,14 +211,44 @@ footer{
   }
 }
 
-@media (max-width: 978px) {
+
+/* @media (max-width: 500px) {
   div .main-text {
-    font-size: 3.5rem;
+    /* font-size: 32px; 
+    color: red;
+  }
+} */
+
+/* @media (max-width: 978px) {
+  div .main-text {
+    /* color: red; 
+    font-size: 2.5rem;
+  }
+} */
+
+@media (max-width: 678px) {
+  header {
+    justify-content: flex-end;
+    padding: 5px 0;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.5%;
+  }
+  .left-section {
+    margin: 0;
   }
 }
 
-@media (max-width: 768px) {
-  .main {
-    max-height: 500px;
+/* @media (max-width: 500px) {
+  div .main-text {
+    /* color: red; 
+    font-size: 2.9rem;
   }
-}
+  .hero {
+    align-items: start;
+  }
+  header, .main {
+    padding: 0.8rem 0;
+  }
+} */
